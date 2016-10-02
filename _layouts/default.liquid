@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{ include "_layouts/_header.liquid" }}
+	</head>
+	<body>
+	<div>
+		{{ include "_layouts/_banner.liquid" }}
+	</div>
+  <div>
+		{{ include "_layouts/_menu.liquid" }}
+	</div>
+	<div>
+		{% if is_post %}
+			{% include '_layouts/post.liquid' %}
+		{% else %}
+			{{ content }}
+		{% endif %}
+	</div>
+	<footer>
+		{{ include "_layouts/_footer.liquid" }}
+	</footer>
+	</body>
+</html>

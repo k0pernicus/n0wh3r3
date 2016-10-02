@@ -1,0 +1,14 @@
+extends: default.liquid
+
+title: n0wh3r3
+path: /
+route: about
+---
+<div >
+  <h2>Welcome users!</h2>
+	<div>
+		{% for post in posts %}
+			<li><a href="{{ post.path }}">{{ post.title }}</a></li>
+		{% endfor %}
+  </div>
+</div>
