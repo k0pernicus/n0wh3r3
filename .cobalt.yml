@@ -1,0 +1,10 @@
+source: "./"
+name: cobalt blog
+dest: "build"
+ignore:
+  - .git/*
+  - .gitignore
+  - build/*
+  - README.md
+  - deploy.sh
+  - .DS_Store
